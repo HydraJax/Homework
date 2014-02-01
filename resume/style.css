@@ -1,0 +1,144 @@
+body {
+
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	/*background: #9E8AC7;*/
+	background-image: url('natural_paper.png');
+	color: #BCADD8;
+	/*border: solid 5px #5C2C7A;*/
+	margin: 0;
+	padding: 0;
+	min-width: 980px;
+}
+
+
+.main-pic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: 5px solid #390046;
+	border-radius: 50%;
+	margin-bottom: 50px;
+
+}
+
+.main-body{
+	width: 980px;
+	margin: 0 auto;
+}
+.navigation{
+	list-style: none;
+	margin: 0 0 50px 0;
+	padding: 10px;
+	background:#9E8AC7;
+	border-bottom: 5px solid #BCADD8;
+	box-shadow: 12px 12px 22px 12px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.navigation a{
+	color: #333;
+	text-decoration: none;
+	padding: 0px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	line-height: 40px;
+	padding-right: 50px;
+}
+
+.images-main-container {
+	display: flex;
+}
+
+.images-main-container img{
+	width: 150px;
+	height: 200px;
+	border: 2px solid #390046;
+}
+
+.images-main-container .image-container {
+	width: 200px;
+	/*height: 300px;*/
+	padding: 20px;
+	background: rgba(188,173,216,0.25);
+	margin: 2px;
+}
+
+h1{
+	font-family: Georgia,Serif;
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+	font-style: italic;
+	float: left;
+	padding-left: 50px;
+
+}
+
+a{
+	font-weight: bold;
+	color: #390046;
+}
+
+h2{
+	color: #390046;
+}
+
+h3{
+	font-size: 18px;
+	color: #B845A6;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 42px;
+}
+
+strong{
+	color: #390046;
+}
+
+p{
+	margin-top: 0;
+	margin-bottom: 22;
+	text-decoration: none;
+	color: #390046;
+}
+
+nav {
+	text-align: center;
+}
+
+ul {
+	margin-bottom: 50px;
+	color: #390046;
+}
+
+li {
+	margin: 10px 0;
+}
+
+.icon{
+	padding: 22px;
+}
+
+.footer{
+	margin-top: 50px;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
