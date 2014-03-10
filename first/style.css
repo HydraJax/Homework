@@ -1,0 +1,248 @@
+*{
+	box-sizing:border-box;
+}
+.page{
+	background: #bdc3c7;
+	max-width: 100%;
+	/*background-image: url('brown.jpg');*/
+	background: rgb(239,222,194);
+}
+
+.top-banner{
+	padding: 10px 40px;
+	width: 100%;
+	background:rgb(215,175,114);
+	border-bottom: 5px solid #9F6614;
+	box-shadow: 12px 12px 33px 12px rgba(0,0,0,.25);
+	/*overflow: hidden;*/
+	margin-bottom: 20px;
+
+}
+.eco{
+	font-family:'Cinzel Decorative',cursive;
+	color: #9F6614;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 1px #000000;
+}
+
+
+.tuf{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #d35400;
+	font-size: 2.5em;
+	margin-right: 5%;
+	text-shadow: 2px 2px 1px #000000;
+}
+.web-name{
+	width: 100%;
+}
+
+a{
+	font-weight: bold;
+	color:#f39c12;
+	text-decoration: none;
+	padding: 0 5px;
+	font-size: 1.25em;
+}
+
+a[href="Food.html"]{
+	color: rgba(26, 188, 156,.75);
+}
+
+a[href="Energy.html"]{
+	color: rgba(41, 128, 185,1);
+	font-weight: bold;
+}
+a[href="Care.html"]{
+	color: rgba(155, 89, 182,1);
+	font-weight: bold;
+}
+a[href="Permaculture.html"]{
+	color: rgba(243, 156, 18,1);
+	font-weight: bold;
+}
+a[href="Building.html"]{
+	color: rgba(192, 57, 43,1);
+	font-weight: bold;
+}
+
+a:hover{
+	color: rgba(149, 165, 166,1);
+}
+
+.container{
+	margin: 20px auto;
+	overflow: hidden;
+	/*display: flex;*/
+	max-width: 960px;
+}
+
+.blog{
+	width: 45%;
+	height: 150px;
+	background: rgba(51,0,0,.5);
+	/*flex: 1;*/
+	border: 2px solid #9F6614;
+	border-radius: 8px;
+	float: left;
+}
+
+.blog a{
+	color: #d35400;
+	padding: 10px;
+	overflow: hidden;
+	font-size: 1em; 
+	margin: 8px 0;
+	overflow: hidden;
+}
+
+.blog a:hover{
+	color: rgba(149, 165, 166,1);
+}
+
+.center-form{
+	width: 20%;
+	/*flex:1;*/
+}
+.form{
+	width: 45%;
+	height: 150px;
+	border: 2px solid #9F6614;
+	border-radius: 8px;
+	background: rgba(51,0,0,.5);
+	float: right;
+}
+
+.form p{
+	color: #d35400;
+	font-size: 1em;
+	padding-left: 10px; 
+	margin: 8px 0;
+}
+
+input[type=email]{
+	padding: 5px 5px 5px 5px;
+	margin-left: 5px;
+	border-radius: 8px;
+	border: 2px solid #9F6614;
+	background: rgba(127, 140, 141,.1);
+	color: rgba(243, 156, 18,1);
+}
+input:focus{
+	outline: none !important;
+    border:1px solid white;
+    box-shadow: 0 0 10px white;
+}
+input[type=submit]{
+	margin: 5px;
+	border-radius: 8px;
+	border: 2px solid #9F6614;
+	background: rgba(127, 140, 141,.1);
+	color: rgba(243, 156, 18,1);
+}
+textarea{
+	margin: 5px;
+	border-radius: 8px;
+	border: 2px solid #9F6614;
+	background: rgba(127, 140, 141,.1);
+	color: rgba(243, 156, 18,1);
+	padding: 5px;
+}
+textarea:focus{
+	outline: none !important;
+    border:1px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.bottom-banner{
+	padding: 10px 40px;
+	width: 100%;
+	background:#342119;
+	border-top: 5px solid #9F6614;
+	box-shadow: 12px 12px 33px 12px rgba(0,0,0,.25);
+}
+
+.icons{
+/*	background: rgba(127, 140, 141,.1);*/
+	margin: 0 auto;
+	width: 300px;
+	padding: 0 5px;
+	/*display: flex;*/
+}
+
+i{
+	color: rgba(225,135,40,.5);
+	margin: 5px;
+}
+
+i:hover{
+	color: rgba(225,135,40,.1);
+}
+
+/*blog apge styling starts here*/
+
+.daily-blog{
+	color: rgba(243, 156, 18,1);
+	font-size: .75em;
+}
+
+ /*carousel css is here  no JS needed*/
+#images img {
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 1s;
+    -o-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -webkit-transition: all linear 1s;
+}
+#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+}
+
+#images {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    border: 5px solid rgba(52,33,25,.5);
+}
+#images img {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+}
+#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+}
+#images img:first-child {
+    left: 0;
+}
+
+#slider{
+	margin-left: 42%;
+
+}
+#slider a {
+    text-decoration: none;
+    background: none;
+    border: 5px solid rgba(52,33,25,.5);
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: rgba(243, 156, 18,1);
+}
+#slider a:hover {
+    background: #C6E4F2;
+}
